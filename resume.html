@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Create Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>Create Your Resume</h1>
+      <p class="developer-info">Fill in your details below to generate a resume</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <form id="resumeForm">
+          <h2>Personal Information</h2>
+          <input type="text" placeholder="Full Name" required /><br><br>
+          <input type="email" placeholder="Email Address" required /><br><br>
+          <input type="text" placeholder="Phone Number" required /><br><br>
+          <input type="text" placeholder="LinkedIn Profile" /><br><br>
+
+          <h2>Education</h2>
+          <textarea placeholder="Your education details..." rows="4" required></textarea><br><br>
+
+          <h2>Work Experience</h2>
+          <textarea placeholder="Your work experience..." rows="4" required></textarea><br><br>
+
+          <h2>Skills</h2>
+          <textarea placeholder="List your skills..." rows="3" required></textarea><br><br>
+
+          <button class="btn" type="submit">Generate Resume</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Resume Maker | Designed by Karthik</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('resumeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Resume generated! (This is just a placeholder. Implement PDF/DOCX export next.)');
+    });
+  </script>
+</body>
+</html>
